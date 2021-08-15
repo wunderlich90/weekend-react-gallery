@@ -78,13 +78,11 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <p>Gallery goes here</p>
-
-        <GalleryList
-          galleryItems={galleryItems}
-          getPicsList={getPicsList}
-        />
-        <img src="images/centralPark.JPG"/>
+      
+          <GalleryList
+            galleryItems={galleryItems}
+            getPicsList={getPicsList}
+          />
       </div>
     );
 }

@@ -23,7 +23,7 @@ TODO
         [x] iterate over the list of gallery data
         [x] create GalleryItems (objects)
     [ ] Pass gallery items to `GalleryItem.js` via `props`
-        [ ] Update  `GalleryList` to use `GalleryItem` to display an image
+        [x] Update  `GalleryList` to use `GalleryItem` to display an image
         [ ] Swap the image with the description on click
             [ ] Use conditional rendering
             [ ] [conditional rendering](https://reactjs.org/docs/conditional-rendering.html.

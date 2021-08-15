@@ -4,14 +4,15 @@ import React from 'react';
 function GalleryItem({item, getPicsList, markLiked, swap}) {
 
     const markPicLiked = () => {
-        markLiked(item.id);
-        getPicsList();
+        let likeCount = 0;
+        console.log('mark pic liked', likeCount ++);
+       
+        
 
     }
 
     const picSwap = () => {
-        swap(item.id)
-        getPicsList();
+   
 
     }
 
@@ -24,9 +25,12 @@ function GalleryItem({item, getPicsList, markLiked, swap}) {
                  src={item.path}
             />
             <p>{item.description}</p>
-            <p>{item.likes}</p>
-            <button onClick={markPicLiked}>LIKE</button>
+            <p>Likes count: {item.likes}</p>
+        <div>
+            <button onClick={() => markPicLiked()}>LIKE</button>
             <button onClick={picSwap}>?</button>
+        </div>
+           
         
         </div>
     )
