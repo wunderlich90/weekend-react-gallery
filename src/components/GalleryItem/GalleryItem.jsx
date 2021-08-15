@@ -20,9 +20,11 @@ function GalleryItem({item, getPicsList, markLiked, swap}) {
 
     return (
         <div id='picsList-item'> 
-            {item.path}
-            {item.description}
-            {item.likes}
+            <img 
+                 src={item.path}
+            />
+            <p>{item.description}</p>
+            <p>{item.likes}</p>
             <button onClick={markPicLiked}>LIKE</button>
             <button onClick={picSwap}>?</button>
         
